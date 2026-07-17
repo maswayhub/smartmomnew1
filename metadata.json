@@ -1,0 +1,8 @@
+{
+  "name": "Remix: SmartMomGuide",
+  "description": "Teman Perjalanan Terbaik Mommy dari Masa Kehamilan hingga Anak Usia 5 Tahun. Panduan digital terstruktur, praktis, dan penuh empati.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
