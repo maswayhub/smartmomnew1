@@ -267,7 +267,7 @@ export default function App() {
           <div className="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-[32px] border border-cream-dark shadow-sm space-y-6">
             <div className="text-center space-y-1">
               <span className="text-[10px] font-black text-soft-teal-dark bg-soft-teal-light/40 px-3 py-1 rounded-full uppercase tracking-wider">
-                Materi Awal & Modul Utama
+                Materi Utama Pendukung Mommy
               </span>
               <h3 className="text-lg md:text-xl font-black text-charcoal">
                 10 Modul Lengkap & Stimulasi Tumbuh Kembang
@@ -281,14 +281,11 @@ export default function App() {
 
           <div className="text-center space-y-1 pt-6 border-t border-dashed border-stone-200">
             <span className="text-[10px] font-black text-warm-pink-dark bg-warm-pink-light/30 px-3 py-1 rounded-full uppercase tracking-wider">
-              Lembar Panduan Detil
+              Berbagai panduan penting
             </span>
             <h3 className="text-lg md:text-xl font-black text-charcoal">
-              Klik Lembar di Bawah Untuk Memperbesar & Membaca
+              Panduan Menghadapi Masa Kehamilan dan Persalinan
             </h3>
-            <p className="text-xs text-charcoal-light font-bold">
-              Setiap lembar panduan didesain dengan format infografis yang indah, ringkas, dan mudah dipraktikkan langsung.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -439,7 +436,7 @@ export default function App() {
               {/* --- THE MAIN STAR (70% WEIGHT) --- */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-black text-warm-pink-dark uppercase tracking-widest">A. PANDUAN UTAMA (70% Fokus Nilai)</span>
+                  <span className="text-xs font-black text-warm-pink-dark uppercase tracking-widest">A. PANDUAN UTAMA</span>
                   <div className="flex-1 h-px bg-warm-pink/20" />
                 </div>
                 
@@ -492,7 +489,7 @@ export default function App() {
               {/* --- THE SUPPORTING BONUSES (30% WEIGHT) --- */}
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-black text-charcoal-light uppercase tracking-widest">B. ASET PENDUKUNG (30% Tambahan Nilai)</span>
+                  <span className="text-xs font-black text-charcoal-light uppercase tracking-widest">B. ASET PENDUKUNG</span>
                   <div className="flex-1 h-px bg-cream-dark/40" />
                 </div>
 

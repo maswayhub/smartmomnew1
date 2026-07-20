@@ -1,5 +1,21 @@
 import { useState, useEffect } from "react";
 import { Star, CheckCircle, MessageSquare, ChevronLeft, ChevronRight } from "lucide-react";
+// @ts-ignore
+import whatsappTestimonialAni from "../assets/images/whatsapp_testimonial_ani_1784558921753.jpg";
+// @ts-ignore
+import whatsappTestimonialNoviana from "../assets/images/whatsapp_testimonial_noviana_1784558936347.jpg";
+// @ts-ignore
+import whatsappTestimonialSarah from "../assets/images/wa_sarah_testimonial_1784559359843.jpg";
+// @ts-ignore
+import whatsappTestimonialZaskia from "../assets/images/wa_zaskia_testimonial_1784559374351.jpg";
+// @ts-ignore
+import whatsappTestimonialCinthya from "../assets/images/wa_cinthya_testimonial_1784559387026.jpg";
+// @ts-ignore
+import whatsappTestimonialWinda from "../assets/images/wa_winda_testimonial_1784559400578.jpg";
+// @ts-ignore
+import whatsappTestimonialArinda from "../assets/images/wa_arinda_testimonial_1784559414014.jpg";
+// @ts-ignore
+import whatsappTestimonialRina from "../assets/images/wa_rina_testimonial_1784559425104.jpg";
 
 interface Testimonial {
   name: string;
@@ -12,133 +28,119 @@ interface Testimonial {
   date: string;
   review: string;
   isWhatsAppTheme?: boolean;
+  imageSrc?: string;
 }
 
 const testimonials: Testimonial[] = [
   {
-    name: "Nabila R.",
-    pregnancyAge: "Persiapan Kehamilan",
-    trimester: "Pranikah",
-    job: "Karyawan BUMN",
-    location: "Bandung",
-    avatarColor: "bg-rose-100 text-rose-500",
-    rating: 5,
-    date: "10 Juli 2026",
-    review: "Sebagai wanita yang akan segera menikah, jujur aku sempat cemas banget soal parenting nanti. Untungnya nemu SmartMom Guide ini lebih awal! Isinya bener-bener membuka mata tentang kesiapan mental, emosi, dan komunikasi dengan pasangan sebelum si kecil hadir. Sangat menenangkan jiwa!",
-    isWhatsAppTheme: false
-  },
-  {
-    name: "Mommy Arini S.",
-    pregnancyAge: "Hamil Anak Pertama",
-    trimester: "Trimester 3",
-    job: "Ibu Rumah Tangga",
-    location: "Jakarta Selatan",
-    avatarColor: "bg-teal-100 text-teal-600",
-    rating: 5,
-    date: "14 Juni 2026",
-    review: "Sangat bersyukur ketemu panduan ini pas hamil kemarin. Isinya super praktis dan mudah dipahami. Bagian panduan perawatan bayi baru lahir beneran jadi penyelamat aku dan suami saat hari-hari pertama membawa pulang bayi dari rumah sakit. Kami jadi tidak panik.",
-    isWhatsAppTheme: true
-  },
-  {
-    name: "Mommy Dianita K.",
-    pregnancyAge: "Hamil Anak Pertama",
+    name: "Ani Wijayanti",
+    pregnancyAge: "Persiapan Trimester 2",
     trimester: "Trimester 2",
-    job: "Guru SD",
-    location: "Surabaya",
-    avatarColor: "bg-purple-100 text-purple-600",
-    rating: 5,
-    date: "30 Mei 2026",
-    review: "Dulu sering bingung dan overthinking karena baca info simpang siur di forum internet. Begitu baca SmartMom Guide, hati langsung adem sekali. Penjelasannya ilmiah tapi ditulis dengan gaya bahasa yang hangat seperti mengobrol dengan sahabat sendiri. Sangat menenangkan!",
-    isWhatsAppTheme: false
-  },
-  {
-    name: "Syafira A.",
-    pregnancyAge: "Hamil Anak Kedua",
-    trimester: "Trimester 1",
-    job: "Dokter Gigi",
-    location: "Yogyakarta",
-    avatarColor: "bg-amber-100 text-amber-600",
-    rating: 5,
-    date: "5 Juli 2026",
-    review: "Buku panduan ini wajib jadi seserahan sih! Isinya bukan cuma teori pengasuhan anak, tapi juga tentang mempersiapkan pondasi rumah tangga yang kuat. Sangat membantu menyelaraskan visi pengasuhan bersama calon suami agar nanti tidak kaget setelah melahirkan.",
-    isWhatsAppTheme: true
-  },
-  {
-    name: "Mommy Hanum F.",
-    pregnancyAge: "Hamil Anak Pertama",
-    trimester: "Trimester 3 (Minggu 36)",
-    job: "Bidan Mandiri",
-    location: "Semarang",
-    avatarColor: "bg-blue-100 text-blue-600",
-    rating: 5,
-    date: "12 Juli 2026",
-    review: "Sekarang sudah masuk minggu ke-36 dan panduan ini bener-bener jadi pegangan wajib di malam hari. Penjelasan tentang fase persalinan dan manajemen nyeri membuat aku yang awalnya takut melahirkan jadi jauh lebih tenang, percaya diri, dan siap menghadapinya.",
-    isWhatsAppTheme: false
-  },
-  {
-    name: "Mommy Clarissa T.",
-    pregnancyAge: "Ibu Baru (Bayi 3 Bulan)",
-    trimester: "Pasca Melahirkan",
-    job: "Arsitek",
-    location: "Medan",
-    avatarColor: "bg-pink-100 text-pink-600",
-    rating: 5,
-    date: "28 Juni 2026",
-    review: "Tantangan menyusui di bulan-bulan awal sempat bikin mental terpuruk. Untungnya bab tentang menyusui di panduan ini sangat informatif dan menenangkan. Menjelaskan secara detail cara pelekatan yang benar tanpa membuat saya merasa bersalah sebagai ibu baru. Highly recommended!",
-    isWhatsAppTheme: true
-  },
-  {
-    name: "Mommy Farah D.",
-    pregnancyAge: "Hamil Anak Pertama",
-    trimester: "Trimester 1",
-    job: "Karyawan Swasta",
-    location: "Makassar",
+    job: "Ibu Rumah Tangga",
+    location: "Sleman",
     avatarColor: "bg-emerald-100 text-emerald-600",
     rating: 5,
-    date: "3 Juli 2026",
-    review: "Di trimester awal yang penuh mual dan perubahan mood, membaca panduan ini memberikan kekuatan tersendiri. Tips menjaga kesehatan mental ibu hamil di bab awal bener-bener aplikatif dan membantu suami juga untuk lebih mengerti perubahan emosi yang sedang saya alami.",
-    isWhatsAppTheme: false
+    date: "Hari Ini",
+    review: "Kak, ebooknya udah aku baca semalam. Awalnya cuma niat baca bentar, eh malah lanjut sampai jam 11 malam 😂. Penjelasannya gampang dimengerti banget. Aku jadi lebih tenang soal persiapan trimester kedua. Makasih ya kak ❤️",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialAni
   },
   {
-    name: "Mommy Rizka P.",
-    pregnancyAge: "Ibu Baru (Bayi 6 Bulan)",
-    trimester: "Pasca Melahirkan",
-    job: "Dosen Keperawatan",
-    location: "Balikpapan",
-    avatarColor: "bg-indigo-100 text-indigo-600",
+    name: "Sarah Pricillia",
+    pregnancyAge: "Persiapan Persalinan",
+    trimester: "Trimester 3",
+    job: "Wiraswasta",
+    location: "Jakarta",
+    avatarColor: "bg-pink-100 text-pink-600",
     rating: 5,
-    date: "1 Juli 2026",
-    review: "Suka sekali dengan pembahasan milestones tumbuh kembang anak di panduan ini. Ditulis dengan sangat terstruktur sehingga saya bisa memantau perkembangan fisik dan kognitif Kayla tanpa harus membanding-bandingkannya secara berlebihan dengan anak lain di media sosial.",
-    isWhatsAppTheme: true
+    date: "Hari Ini",
+    review: "Masya Allah, Ebook SmartMom Guide ini bener-bener recommended! Isinya ngupas tuntas persiapan persalinan, cara ngatur napas, hingga pendampingan suami. Rasa cemas menjelang persalinan langsung berkurang drastis 🤰👶❤️ . Makasih seller!",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialSarah
   },
   {
-    name: "Amira Syifa",
+    name: "Zaskia Cantika",
     pregnancyAge: "Persiapan Kehamilan",
     trimester: "Pranikah",
-    job: "Apoteker",
-    location: "Malang",
-    avatarColor: "bg-orange-100 text-orange-600",
+    job: "Karyawan Swasta",
+    location: "Bandung",
+    avatarColor: "bg-purple-100 text-purple-600",
     rating: 5,
-    date: "8 Juli 2026",
-    review: "Ini investasi terbaik sebelum melangkah ke jenjang pernikahan. Mempelajari ilmu parenting sejak dini membuat saya merasa memiliki bekal mental yang kokoh. Isinya mengajarkan bahwa menjadi orang tua yang baik itu dipersiapkan, bukan sekadar naluri alami.",
-    isWhatsAppTheme: false
+    date: "Hari Ini",
+    review: "Jujur aku orangnya gampang panik kalau baca info di internet. Setelah baca SmartMom Guide rasanya jauh lebih tenang. Enak karena bahasanya nggak bikin takut. Suami juga ikut baca beberapa bab 😊",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialZaskia
   },
   {
-    name: "Mommy Nindya H.",
-    pregnancyAge: "Ibu Baru (Bayi 1 Tahun)",
-    trimester: "Pasca Melahirkan",
-    job: "Desainer Grafis",
-    location: "Denpasar",
-    avatarColor: "bg-red-100 text-red-500",
+    name: "Cinthya Astika",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 1",
+    job: "Guru SD",
+    location: "Surabaya",
+    avatarColor: "bg-rose-100 text-rose-600",
     rating: 5,
-    date: "15 Juli 2026",
-    review: "Meskipun anak saya sudah jalan setahun, panduan ini tetap sangat relevan. Terutama bab mengenai stimulasi emosi anak dan menghadapi tantangan tantrum pertama. Panduan ini bener-bener mengajarkan cara mendidik anak dengan sabar dan penuh kasih sayang tanpa amarah.",
-    isWhatsAppTheme: true
+    date: "Hari Ini",
+    review: "Jujur terbantu banget setelah baca Ebook SmartMom Guide ini! Penjelasan seputar masa kehamilan, nutrisi bumil, sampai tips mengatasi mual sangat praktis dan gampang dipahami. Bener-bener dapet banyak ilmu baru buat bekal jadi calon ibu 🤩🔥🙌. Recommended buat bumil!",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialCinthya
+  },
+  {
+    name: "Winda Simare-mare",
+    pregnancyAge: "Hamil Anak Kedua",
+    trimester: "Trimester 2",
+    job: "Apoteker",
+    location: "Yogyakarta",
+    avatarColor: "bg-blue-100 text-blue-600",
+    rating: 5,
+    date: "Hari Ini",
+    review: "Aku kira isinya cuma teori ternyata banyak tips yang langsung kepake. Bahasanya juga ringan, nggak kayak baca buku kuliah 😂",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialWinda
+  },
+  {
+    name: "Arinda Sari",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 3",
+    job: "Arsitek",
+    location: "Sleman",
+    avatarColor: "bg-amber-100 text-amber-600",
+    rating: 5,
+    date: "Hari Ini",
+    review: "Baru selesai baca bagian persiapan persalinan. Lumayan bikin percaya diri. Biasanya tiap malam kepikiran terus nanti lahiran gimana. Sekarang rasanya lebih siap sedikit demi sedikit.",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialArinda
+  },
+  {
+    name: "Rina Fatmawati",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 3",
+    job: "Bidan Mandiri",
+    location: "Semarang",
+    avatarColor: "bg-indigo-100 text-indigo-600",
+    rating: 5,
+    date: "Hari Ini",
+    review: "Kak, checklist perlengkapan melahirkannya ngebantu banget. Ternyata masih banyak yang belum aku siapin 😭 Untung belinya sekarang, jadi masih ada waktu.",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialRina
+  },
+  {
+    name: "Noviana Sitanggang",
+    pregnancyAge: "Persiapan Kehamilan",
+    trimester: "Pranikah",
+    job: "Wiraswasta",
+    location: "Medan",
+    avatarColor: "bg-teal-100 text-teal-600",
+    rating: 5,
+    date: "Hari Ini",
+    review: "Walaupun aku belum hamil, ternyata banyak materi yang memang perlu dipelajari dari sekarang. Jadi nggak kaget nanti pas udah masuk masa kehamilan. Worth it banget menurutku.👩‍🦰🍼✨ . Recommended buat bumil!",
+    isWhatsAppTheme: true,
+    imageSrc: whatsappTestimonialNoviana
   }
 ];
 
 export default function ReviewSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const visibleCount = 1; // Always show 1 review card to keep the landing page in a clean, 1-column layout
 
   const maxIndex = testimonials.length - visibleCount;
@@ -170,7 +172,62 @@ export default function ReviewSection() {
                 className="w-full shrink-0 px-3 flex flex-col"
                 style={{ width: `${100 / visibleCount}%` }}
               >
-                {t.isWhatsAppTheme ? (
+                {t.imageSrc ? (
+                  /* Custom card with WhatsApp capture proof (high trust & conversion value) */
+                  <div className="bg-emerald-50/40 rounded-[32px] border border-emerald-100 shadow-xs p-5 md:p-8 flex-1 flex flex-col md:flex-row gap-6 items-center justify-between relative overflow-hidden h-full">
+                    <div className="absolute top-0 right-0 bg-emerald-500 text-white px-3 py-1 rounded-bl-2xl text-[10px] font-black uppercase tracking-wider flex items-center gap-1">
+                      <CheckCircle className="w-3 h-3 fill-white text-emerald-500" />
+                      Chat WA Asli
+                    </div>
+
+                    <div className="flex-1 space-y-4 text-left w-full">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shrink-0 ${t.avatarColor}`}>
+                          {t.name[0]}
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-charcoal text-sm flex items-center gap-1">
+                            {t.name}
+                            <CheckCircle className="w-3.5 h-3.5 fill-emerald-500 text-white shrink-0" />
+                          </h4>
+                          <p className="text-[10px] text-[#075E54] font-bold">{t.pregnancyAge} • {t.trimester}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-0.5">
+                        {[1, 2, 3, 4, 5].map((s) => (
+                          <Star key={s} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                        ))}
+                      </div>
+
+                      <p className="italic text-charcoal text-sm leading-relaxed font-medium">
+                        "{t.review}"
+                      </p>
+
+                      <div className="text-[10px] text-stone-500 font-bold">
+                        {t.date} • {t.location} • Terverifikasi ✔✔
+                      </div>
+                    </div>
+
+                    {/* Screenshot side container */}
+                    <div 
+                      onClick={() => setLightboxImg(t.imageSrc || null)}
+                      className="w-full max-w-[240px] md:max-w-[200px] aspect-[3/4] md:aspect-[2/3] rounded-2xl overflow-hidden shadow-xs border border-emerald-100 bg-white shrink-0 group/img relative cursor-zoom-in hover:shadow-sm transition-shadow"
+                    >
+                      <img 
+                        src={t.imageSrc} 
+                        alt={`Testimoni WhatsApp ${t.name}`}
+                        className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-300"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                        <span className="bg-white/95 text-charcoal text-[10px] font-black px-2.5 py-1.5 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+                          🔍 Perbesar Chat
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ) : t.isWhatsAppTheme ? (
                   /* Simulated WhatsApp Style Chat Card (High CRO Value) */
                   <div className="bg-emerald-50/50 rounded-3xl border border-emerald-100 shadow-xs p-5 flex-1 flex flex-col justify-between relative overflow-hidden h-full">
                     <div className="absolute top-0 right-0 bg-emerald-100/40 text-emerald-700 px-3 py-1 rounded-bl-2xl text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
@@ -282,6 +339,32 @@ export default function ReviewSection() {
           />
         ))}
       </div>
+
+      {/* Testimonial Lightbox Modal */}
+      {lightboxImg && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 backdrop-blur-xs transition-opacity duration-300 cursor-zoom-out"
+          onClick={() => setLightboxImg(null)}
+        >
+          <div className="relative max-w-full max-h-[90vh] md:max-h-[95vh] flex flex-col justify-center animate-scale-in">
+            <button 
+              onClick={() => setLightboxImg(null)}
+              className="absolute -top-12 right-0 bg-white/20 hover:bg-white/40 text-white w-9 h-9 rounded-full flex items-center justify-center text-lg transition-all"
+            >
+              ✕
+            </button>
+            <img 
+              src={lightboxImg} 
+              alt="Testimoni WhatsApp Detil" 
+              className="rounded-2xl max-w-full max-h-[80vh] md:max-h-[85vh] object-contain shadow-2xl border border-white/10"
+              referrerPolicy="no-referrer"
+            />
+            <p className="text-center text-white/80 text-xs font-bold mt-4">
+              Klik di mana saja untuk menutup kembali
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

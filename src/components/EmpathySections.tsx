@@ -111,9 +111,6 @@ export default function EmpathySections() {
       <section id="masalah" className="py-16 md:py-24 bg-white border-b border-cream-dark">
         <div className="w-full max-w-4xl mx-auto px-6 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-black uppercase tracking-widest text-warm-pink-dark">
-              PAIN POINT SPESIFIK IBU HAMIL
-            </span>
             <h2 className="text-2.5xl md:text-4xl font-black text-charcoal tracking-tight leading-tight">
               Yang Sering Membuat Ibu Hamil Menangis Diam-Diam
             </h2>
