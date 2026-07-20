@@ -182,13 +182,13 @@ export default function ImageSlider() {
             <div className="flex gap-2.5 items-start">
               <span className="text-warm-pink text-sm mt-0.5">🌸</span>
               <p className="text-xs md:text-sm text-charcoal-light">
-                <strong>Format Praktis:</strong> Dirancang dengan visual infografis yang menenangkan, ramah di mata, dan hemat kuota.
+                <strong>Hati Tenang & Gak Bingung Lagi:</strong> Didesain dengan visual infografis yang hangat dan ramah di mata, membuat materi penting terasa sangat ringan dan langsung bisa dipahami seketika.
               </p>
             </div>
             <div className="flex gap-2.5 items-start">
               <span className="text-warm-pink text-sm mt-0.5">📱</span>
               <p className="text-xs md:text-sm text-charcoal-light">
-                <strong>Mobile-Friendly:</strong> Sangat nyaman dibuka di Google Drive HP Mommy kapan saja dan di mana saja.
+                <strong>Penyelamat Cemas Tengah Malam:</strong> Selalu siap menemani Mommy di HP kapan saja dan di mana saja. Begitu ada keraguan menyerang, petunjuk menenangkan langsung ada di genggaman.
               </p>
             </div>
           </div>

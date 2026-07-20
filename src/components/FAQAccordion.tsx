@@ -62,19 +62,46 @@ export default function FAQAccordion() {
         },
         {
           id: "t4",
-          question: "Apakah mudah dipahami?",
+          question: "Apakah cocok untuk trimester pertama?",
           answer: (
             <p>
-              Ya, 100%! Bahasa yang digunakan dalam ebook ini sangat <strong>sederhana, santun, hangat, dan langsung berfokus ke praktik nyata</strong> di kehidupan sehari-hari, bebas dari teori medis yang rumit dan membosankan.
+              <strong>Sangat cocok!</strong> Bahkan sangat disarankan dibaca sedini mungkin sejak garis dua. Bab-bab awal membahas tuntas tentang penanganan morning sickness, nutrisi krusial janin trimester pertama, hingga cara mengelola emosi dan kecemasan yang melonjak drastis di awal kehamilan.
             </p>
           )
         },
         {
           id: "t5",
-          question: "Apakah suami juga bisa membacanya?",
+          question: "Apakah ini menggantikan dokter?",
           answer: (
             <p>
-              Tentu saja! Kami menyediakan panduan khusus agar Ayah (suami) lebih siap secara mental dan sigap dalam membantu merawat bayi, sehingga Mommy tidak kelelahan sendirian dan pengasuhan si kecil bisa dinikmati bersama dengan penuh bahagia.
+              <strong>Tidak sama sekali.</strong> SmartMom Guide adalah panduan pendamping emosional dan praktis harian untuk membantu Mommy tenang dan terstruktur. Ini tidak menggantikan diagnosis, pemeriksaan medis rutin, atau saran dari dokter spesialis kandungan dan bidan Mommy.
+            </p>
+          )
+        },
+        {
+          id: "t6",
+          question: "Bagaimana jika saya mengalami kehamilan berisiko?",
+          answer: (
+            <p>
+              Jika Mommy memiliki kondisi kehamilan berisiko (misal preeklamsia, diabetes gestasional, dll), Mommy tetap bisa membaca ebook ini untuk mendapatkan dukungan emosional dan tips pengasuhan umum. Namun, untuk tindakan medis dan saran diet spesifik, selalu prioritaskan arahan langsung dari dokter kandungan Mommy.
+            </p>
+          )
+        },
+        {
+          id: "t7",
+          question: "Apakah bisa dibaca bersama suami?",
+          answer: (
+            <p>
+              <strong>Tentu saja, sangat disarankan!</strong> Kehamilan adalah perjalanan bersama. Membaca bersama suami sangat membantu menyamakan pemahaman tentang perubahan emosi Mommy, mempersiapkan checklist persalinan bersama, hingga membagi tugas merawat bayi pasca melahirkan dengan kompak tanpa perdebatan.
+            </p>
+          )
+        },
+        {
+          id: "t8",
+          question: "Bagaimana kalau saya tidak terbiasa membaca ebook?",
+          answer: (
+            <p>
+              Tenang saja Mom! Kami mendesain SmartMom Guide dengan visual yang sangat cantik, interaktif, tidak membosankan, dan to-the-point. Selain format PDF standar, Mommy juga mendapatkan akses 3D Flipbook interaktif yang rasanya seperti membalik lembar buku asli, sangat nyaman dibaca di layar HP kapan saja.
             </p>
           )
         }

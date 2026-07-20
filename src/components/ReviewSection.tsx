@@ -3,7 +3,9 @@ import { Star, CheckCircle, MessageSquare, ChevronLeft, ChevronRight } from "luc
 
 interface Testimonial {
   name: string;
-  status: string;
+  pregnancyAge: string;
+  trimester: string;
+  job: string;
   location: string;
   avatarColor: string;
   rating: number;
@@ -15,7 +17,9 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Nabila R.",
-    status: "Calon Pengantin (Menikah Bulan Depan)",
+    pregnancyAge: "Persiapan Kehamilan",
+    trimester: "Pranikah",
+    job: "Karyawan BUMN",
     location: "Bandung",
     avatarColor: "bg-rose-100 text-rose-500",
     rating: 5,
@@ -25,7 +29,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Arini S.",
-    status: "Ibu dari Rayyan (Newborn - 1 Bulan)",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 3",
+    job: "Ibu Rumah Tangga",
     location: "Jakarta Selatan",
     avatarColor: "bg-teal-100 text-teal-600",
     rating: 5,
@@ -35,7 +41,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Dianita K.",
-    status: "Sedang Hamil Trimester 2",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 2",
+    job: "Guru SD",
     location: "Surabaya",
     avatarColor: "bg-purple-100 text-purple-600",
     rating: 5,
@@ -45,7 +53,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Syafira A.",
-    status: "Calon Pengantin (Persiapan Pernikahan)",
+    pregnancyAge: "Hamil Anak Kedua",
+    trimester: "Trimester 1",
+    job: "Dokter Gigi",
     location: "Yogyakarta",
     avatarColor: "bg-amber-100 text-amber-600",
     rating: 5,
@@ -55,7 +65,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Hanum F.",
-    status: "Hamil Trimester 3",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 3 (Minggu 36)",
+    job: "Bidan Mandiri",
     location: "Semarang",
     avatarColor: "bg-blue-100 text-blue-600",
     rating: 5,
@@ -65,7 +77,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Clarissa T.",
-    status: "Ibu dari Keanu (3 Bulan)",
+    pregnancyAge: "Ibu Baru (Bayi 3 Bulan)",
+    trimester: "Pasca Melahirkan",
+    job: "Arsitek",
     location: "Medan",
     avatarColor: "bg-pink-100 text-pink-600",
     rating: 5,
@@ -75,7 +89,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Farah D.",
-    status: "Hamil Trimester 1",
+    pregnancyAge: "Hamil Anak Pertama",
+    trimester: "Trimester 1",
+    job: "Karyawan Swasta",
     location: "Makassar",
     avatarColor: "bg-emerald-100 text-emerald-600",
     rating: 5,
@@ -85,7 +101,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Rizka P.",
-    status: "Ibu dari Kayla (6 Bulan)",
+    pregnancyAge: "Ibu Baru (Bayi 6 Bulan)",
+    trimester: "Pasca Melahirkan",
+    job: "Dosen Keperawatan",
     location: "Balikpapan",
     avatarColor: "bg-indigo-100 text-indigo-600",
     rating: 5,
@@ -95,7 +113,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Amira Syifa",
-    status: "Calon Pengantin (Menikah 3 Bulan Lagi)",
+    pregnancyAge: "Persiapan Kehamilan",
+    trimester: "Pranikah",
+    job: "Apoteker",
     location: "Malang",
     avatarColor: "bg-orange-100 text-orange-600",
     rating: 5,
@@ -105,7 +125,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Mommy Nindya H.",
-    status: "Ibu dari Alora (1 Tahun)",
+    pregnancyAge: "Ibu Baru (Bayi 1 Tahun)",
+    trimester: "Pasca Melahirkan",
+    job: "Desainer Grafis",
     location: "Denpasar",
     avatarColor: "bg-red-100 text-red-500",
     rating: 5,
@@ -168,7 +190,7 @@ export default function ReviewSection() {
                               {t.name}
                               <CheckCircle className="w-3.5 h-3.5 fill-emerald-500 text-white shrink-0" />
                             </h4>
-                            <p className="text-[10px] text-charcoal-light font-medium">{t.status}</p>
+                            <p className="text-[10px] text-[#075E54] font-bold">{t.pregnancyAge} • {t.trimester} • {t.job}</p>
                           </div>
                         </div>
 
@@ -202,7 +224,7 @@ export default function ReviewSection() {
                               {t.name}
                               <CheckCircle className="w-3.5 h-3.5 fill-soft-teal text-white shrink-0" />
                             </h4>
-                            <p className="text-[10px] text-charcoal-light font-medium">{t.status}</p>
+                            <p className="text-[10px] text-warm-pink-dark font-bold">{t.pregnancyAge} • {t.trimester} • {t.job}</p>
                           </div>
                         </div>
                       </div>
