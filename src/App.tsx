@@ -22,7 +22,7 @@ import {
 
 import FAQAccordion from "./components/FAQAccordion";
 import CheckoutModal from "./components/CheckoutModal";
-import ReviewSection from "./components/ReviewSection";
+import TestimoniList from "./components/TestimoniList";
 import WhatsAppWidget from "./components/WhatsAppWidget";
 import ImageSlider from "./components/ImageSlider";
 import FormatShowcase from "./components/FormatShowcase";
@@ -60,7 +60,7 @@ import fingerGymCard from "./assets/images/finger_gym_card_1783437430982.jpg";
 // @ts-ignore
 import animalColoringPage from "./assets/images/animal_coloring_page_1783437448142.jpg";
 // @ts-ignore
-import morningSicknessPage from "./assets/images/morning_sickness_infographic_new_1784556138171.jpg";
+import morningSicknessPage from "./assets/images/morning_sickness_page_1784542526956.jpg";
 // @ts-ignore
 import birthChecklistPage from "./assets/images/birth_checklist_page_1784542541682.jpg";
 // @ts-ignore
@@ -194,7 +194,7 @@ export default function App() {
           </div>
 
           <div className="pt-4">
-            <ReviewSection />
+            <TestimoniList />
           </div>
         </div>
       </section>
@@ -645,7 +645,7 @@ export default function App() {
                 </a>
                 
                 <p className="text-[11px] text-[#cc9c00] font-black italic max-w-md mx-auto leading-normal">
-                  *Gunakan kode kupon <span className="bg-yellow-200 px-1.5 py-0.5 text-charcoal rounded-md font-black not-italic">"IBU CERDAS"</span> di halaman checkout untuk memotong harga menjadi ± Rp50.500 (kurang lebih Rp49.000) saja!
+                  *Gunakan kode kupon <span className="bg-yellow-200 px-1.5 py-0.5 text-charcoal rounded-md font-black not-italic">"IBUCERDAS"</span> di halaman checkout untuk memotong harga menjadi ± Rp50.500 (kurang lebih Rp49.000) saja!
                 </p>
 
                 <div className="pt-3 border-t border-cream-dark/60 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-bold text-charcoal-light">
