@@ -98,7 +98,7 @@ export default function App() {
   }, []);
 
   const openCheckout = () => {
-    window.open("http://lynk.id/parentingacademyid/pK3xExj/checkout", "_blank", "noopener,noreferrer");
+    window.open("https://wa.link/wt01kr", "_blank", "noopener,noreferrer");
   };
 
   const scrollToPriceCard = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -636,7 +636,7 @@ export default function App() {
               {/* Bold Checkout Button */}
               <div className="pt-2 text-center space-y-4 max-w-xl mx-auto">
                 <a
-                  href="http://lynk.id/parentingacademyid/pK3xExj/checkout"
+                  href="https://wa.link/wt01kr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#ffc300] hover:bg-[#e0ac00] active:scale-[0.98] text-charcoal font-black text-sm md:text-base py-5 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer flex items-center justify-center gap-2 border-b-4 border-[#cc9c00] animate-bounce text-center"
@@ -758,7 +758,7 @@ export default function App() {
               </div>
             </div>
             <a
-              href="http://lynk.id/parentingacademyid/pK3xExj/checkout"
+              href="https://wa.link/wt01kr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-soft-teal hover:bg-soft-teal-dark active:scale-95 text-white font-extrabold text-xs px-4 py-3 rounded-xl shadow-md transition-all flex items-center justify-center gap-1 cursor-pointer text-center"
