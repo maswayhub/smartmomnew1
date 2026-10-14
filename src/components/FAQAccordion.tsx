@@ -121,69 +121,53 @@ export default function FAQAccordion() {
                 <table className="w-full text-left border-collapse text-xs md:text-sm">
                   <thead>
                     <tr className="bg-cream/70 text-charcoal font-bold">
-                      <th className="p-3 border-b border-cream-dark">Produk Premium</th>
+                      <th className="p-3 border-b border-cream-dark">Produk & Bonus</th>
                       <th className="p-3 border-b border-cream-dark text-right">Nilai Riil</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-cream-dark/60">
                     <tr>
-                      <td className="p-3">📙 Ebook SmartMom Guide PDF</td>
+                      <td className="p-3">📙 Ebook SmartMom Guide Premium PDF</td>
                       <td className="p-3 text-right font-semibold">Rp199.000</td>
                     </tr>
                     <tr>
-                      <td className="p-3">🗓️ Printable Parenting Planner</td>
+                      <td className="p-3">🗓️ Bonus: Printable Parenting Planner</td>
                       <td className="p-3 text-right font-semibold">Rp129.000</td>
                     </tr>
                     <tr>
-                      <td className="p-3">🎈 60.000+ Kids Activities Bundle</td>
-                      <td className="p-3 text-right font-semibold">Rp399.000</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3">🎓 39.000+ Printable Edukasi Siap Cetak</td>
-                      <td className="p-3 text-right font-semibold">Rp299.000</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3">🧠 Brain & Finger Gym Pack</td>
-                      <td className="p-3 text-right font-semibold">Rp199.000</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3">🎨 300+ Mewarnai Anak Pack</td>
+                      <td className="p-3">💰 Bonus: Budget Planner Lahiran (Excel Kalkulator)</td>
                       <td className="p-3 text-right font-semibold">Rp99.000</td>
                     </tr>
                     <tr>
-                      <td className="p-3">💻 Dashboard Web Interaktif</td>
-                      <td className="p-3 text-right font-semibold">Rp149.000</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3">📖 3D Flipbook Premium + Budget Planner</td>
-                      <td className="p-3 text-right font-semibold">Rp248.000</td>
+                      <td className="p-3">💻 Dashboard Web Interaktif + 3D Flipbook</td>
+                      <td className="p-3 text-right font-semibold">Termasuk</td>
                     </tr>
                     <tr className="bg-warm-pink-light/30">
                       <td className="p-3 font-bold text-charcoal">TOTAL NILAI PAKET:</td>
-                      <td className="p-3 text-right font-extrabold text-red-600">Rp1.722.000</td>
+                      <td className="p-3 text-right font-extrabold text-red-600">Rp427.000</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div className="bg-yellow-100/70 border border-yellow-200 rounded-xl p-3 text-center text-xs md:text-sm font-black text-charcoal">
-                🎉 Spesial promo hari ini Mommy cukup membayar <span className="text-rose-600 text-base">Rp79.000</span> saja seumur hidup!
+                🎉 Khusus Anda untuk Bulan Ini: <span className="line-through text-stone-400 mr-2">Rp199.000</span> <span className="text-rose-600 text-base font-black">Bayar Suka-suka!</span>
               </div>
             </div>
           )
         },
         {
           id: "b2",
-          question: "Masih ada diskon lagi?",
+          question: "Apakah perlu memasukkan kode kupon?",
           answer: (
             <div className="space-y-3">
-              <p>Ada kabar gembira untuk Mommy! Mommy bisa klaim diskon tambahan sebesar <strong>36%</strong> dengan memasukkan kode kupon berikut di halaman checkout:</p>
-              <div className="inline-block bg-yellow-200 border-2 border-dashed border-[#ffc300] text-charcoal text-center px-6 py-2.5 rounded-xl font-black text-lg tracking-wider">
-                🎁 IBUCERDAS
+              <p>Mommy <strong>tidak perlu memasukkan kode kupon</strong> apa pun!</p>
+              <div className="inline-block bg-teal-50 border-2 border-dashed border-soft-teal text-charcoal text-center px-6 py-2.5 rounded-xl font-black text-base md:text-lg tracking-wider">
+                ✨ Promo Bulan Ini: Bayar Suka-suka
               </div>
               <ul className="space-y-1 text-xs md:text-sm font-semibold text-stone-600 pl-1">
-                <li>• Harga Promo Awal: <span className="line-through">Rp79.000</span></li>
-                <li>• Setelah Input Voucher: <span className="text-rose-600 font-extrabold">± Rp50.500 (Kurang lebih Rp49.000) saja!</span></li>
-                <li>• Masa Berlaku: <span className="text-amber-600">Terbatas khusus bulan ini saja</span>.</li>
+                <li>• Harga Normal: <span className="line-through">Rp199.000</span></li>
+                <li>• Khusus Bulan Ini: <span className="text-rose-600 font-extrabold">Bayar Suka-suka di halaman checkout!</span></li>
+                <li>• Akses: <span className="text-emerald-700">Langsung aktif seumur hidup, tanpa biaya langganan</span>.</li>
               </ul>
             </div>
           )
@@ -252,10 +236,9 @@ export default function FAQAccordion() {
             <div className="space-y-3">
               <p>Masa tumbuh kembang buah hati Mommy tidak bisa diulang kembali. Memulai bekal ilmu yang tepat adalah wujud kasih sayang terbaik. Ambil sekarang karena:</p>
               <ul className="space-y-1.5 list-none pl-1 text-xs md:text-sm font-semibold">
-                <li className="flex items-center gap-2">✅ <span>Dapatkan paket super lengkap senilai total <strong>Rp1.722.000</strong></span></li>
-                <li className="flex items-center gap-2">✅ <span>Harga super murah promo bulan ini hanya <strong>Rp79.000</strong></span></li>
-                <li className="flex items-center gap-2">✅ <span>Dapatkan harga makin hemat dengan kupon <strong>IBUCERDAS</strong> (potongan diskon 36%)</span></li>
-                <li className="flex items-center gap-2 text-rose-600">⏳ <span><strong>Penawaran promo khusus bulan ini (hanya ± Rp50.500 / kurang lebih Rp49.000 saja dengan kupon!). Jangan sampai kelewatan ya Mom!</strong></span></li>
+                <li className="flex items-center gap-2">✅ <span>Dapatkan Ebook SmartMom Guide lengkap beserta <strong>Bonus Parenting Planner & Budget Planner Lahiran</strong></span></li>
+                <li className="flex items-center gap-2">✅ <span>Harga normal <span className="line-through text-stone-400">Rp199.000</span> dicoret</span></li>
+                <li className="flex items-center gap-2 text-rose-600">⏳ <span><strong>Penawaran promo khusus Anda untuk bulan ini: Bayar Suka-suka tanpa kupon! Jangan sampai kelewatan ya Mom!</strong></span></li>
               </ul>
             </div>
           )

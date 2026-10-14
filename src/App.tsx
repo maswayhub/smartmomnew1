@@ -98,7 +98,7 @@ export default function App() {
   }, []);
 
   const openCheckout = () => {
-    window.open("https://wa.link/wt01kr", "_blank", "noopener,noreferrer");
+    window.open("http://lynk.id/parentingacademyid/l2eevkg2g47w/checkout", "_blank", "noopener,noreferrer");
   };
 
   const scrollToPriceCard = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -481,7 +481,7 @@ export default function App() {
                   
                   <div className="pt-3 border-t border-cream-dark flex items-center justify-between text-xs font-bold text-charcoal-light">
                     <span>⏱️ Sekali Bayar • Akses Selamanya • Gratis Update</span>
-                    <span className="text-red-500 font-extrabold">Nilai Riil: Rp497.000</span>
+                    <span className="text-red-500 font-extrabold">Nilai Riil: Rp199.000</span>
                   </div>
                 </div>
               </div>
@@ -502,7 +502,7 @@ export default function App() {
                       <h4 className="font-extrabold text-sm text-charcoal">Parenting Planner</h4>
                     </div>
                     <p className="text-xs text-charcoal-light leading-relaxed">
-                      Planner cetak berisi checklist persalinan, tracker ASI, imunisasi, dan MPASI.
+                      Planner cetak berisi checklist persalinan, tracker ASI, imunisasi, dan jadwal tumbuh kembang si kecil.
                     </p>
                     <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp129.000</span>
                   </div>
@@ -510,59 +510,11 @@ export default function App() {
                   {/* Bonus 2 */}
                   <div className="bg-white p-5 rounded-3xl border border-cream-dark text-left space-y-3 shadow-3xs hover:border-warm-pink/30 transition-colors">
                     <div className="flex items-center gap-2.5">
-                      <span className="text-xl">🎈</span>
-                      <h4 className="font-extrabold text-sm text-charcoal">60k+ Kids Activities</h4>
-                    </div>
-                    <p className="text-xs text-charcoal-light leading-relaxed">
-                      Aktivitas stimulasi motorik & sensorik balita harian biar anti-gadget.
-                    </p>
-                    <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp399.000</span>
-                  </div>
-
-                  {/* Bonus 3 */}
-                  <div className="bg-white p-5 rounded-3xl border border-cream-dark text-left space-y-3 shadow-3xs hover:border-warm-pink/30 transition-colors">
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-xl">🎓</span>
-                      <h4 className="font-extrabold text-sm text-charcoal">39k+ Printable Edukasi</h4>
-                    </div>
-                    <p className="text-xs text-charcoal-light leading-relaxed">
-                      Kumpulan flashcard tebal, angka, huruf, dan puzzle siap cetak sepuasnya.
-                    </p>
-                    <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp299.000</span>
-                  </div>
-
-                  {/* Bonus 4 */}
-                  <div className="bg-white p-5 rounded-3xl border border-cream-dark text-left space-y-3 shadow-3xs hover:border-warm-pink/30 transition-colors">
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-xl">🧠</span>
-                      <h4 className="font-extrabold text-sm text-charcoal">Brain & Finger Gym</h4>
-                    </div>
-                    <p className="text-xs text-charcoal-light leading-relaxed">
-                      Latihan senam jari stimulasi fokus anak dari kurikulum India-Finlandia.
-                    </p>
-                    <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp199.000</span>
-                  </div>
-
-                  {/* Bonus 5 */}
-                  <div className="bg-white p-5 rounded-3xl border border-cream-dark text-left space-y-3 shadow-3xs hover:border-warm-pink/30 transition-colors">
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-xl">✏️</span>
-                      <h4 className="font-extrabold text-sm text-charcoal">300+ Mewarnai Anak</h4>
-                    </div>
-                    <p className="text-xs text-charcoal-light leading-relaxed">
-                      Ratusan lembar sketsa dinosaurus & hewan lucu pereda bosan si kecil.
-                    </p>
-                    <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp99.000</span>
-                  </div>
-
-                  {/* Bonus 6 */}
-                  <div className="bg-white p-5 rounded-3xl border border-cream-dark text-left space-y-3 shadow-3xs hover:border-warm-pink/30 transition-colors">
-                    <div className="flex items-center gap-2.5">
                       <span className="text-xl">💰</span>
                       <h4 className="font-extrabold text-sm text-charcoal">Budget Planner Lahiran</h4>
                     </div>
                     <p className="text-xs text-charcoal-light leading-relaxed">
-                      Spreadsheet Excel kalkulator kalkulasi biaya persiapan persalinan & menyusui.
+                      Spreadsheet Excel kalkulator kalkulasi biaya persiapan persalinan & perlengkapan menyusui.
                     </p>
                     <span className="text-[10px] text-red-500 font-extrabold block">Nilai Riil: Rp99.000</span>
                   </div>
@@ -579,7 +531,7 @@ export default function App() {
 
               <div className="space-y-1">
                 <p className="text-xs font-black uppercase tracking-widest text-[#cc9c00]">
-                  🔥 VALUE ANCHORING • HARGA PROMO 🔥
+                  🔥 PENAWARAN SPESIAL BULAN INI 🔥
                 </p>
                 <h3 className="text-2.5xl md:text-4xl font-black text-charcoal">
                   Berapa Nilai Ketenangan Seorang Ibu?
@@ -592,15 +544,19 @@ export default function App() {
                 </p>
                 <div className="flex justify-between items-center text-stone-500 font-semibold">
                   <span>📙 Ebook SmartMom Guide PDF + Web Access</span>
-                  <span>Rp 497.000</span>
+                  <span>Rp 199.000</span>
                 </div>
                 <div className="flex justify-between items-center text-stone-500 font-semibold">
-                  <span>🎁 Paket 6 Mega Bonus Aset Cetak & Stimulasi</span>
-                  <span>Rp 1.125.000</span>
+                  <span>🎁 Bonus Parenting Planner</span>
+                  <span>Rp 129.000</span>
+                </div>
+                <div className="flex justify-between items-center text-stone-500 font-semibold">
+                  <span>🎁 Bonus Budget Planner Lahiran</span>
+                  <span>Rp 99.000</span>
                 </div>
                 <div className="flex justify-between items-center text-charcoal font-black text-sm md:text-base pt-2 border-t border-dashed border-stone-200">
-                  <span>TOTAL NILAI SEBENARNYA:</span>
-                  <span className="line-through text-red-500 font-extrabold">Rp 1.622.000</span>
+                  <span>TOTAL NILAI PAKET:</span>
+                  <span className="line-through text-red-500 font-extrabold">Rp 427.000</span>
                 </div>
               </div>
 
@@ -609,23 +565,26 @@ export default function App() {
                   "Bayangkan jika semua rasa cemas yang Mommy rasakan hari ini bisa digantikan dengan satu panduan yang selalu siap dibuka kapan saja."
                 </p>
                 <p className="text-xs md:text-sm text-charcoal-light font-bold max-w-lg mx-auto">
-                  Tentu Mommy tidak perlu membayar jutaan rupiah. Hanya dengan kontribusi sekali seumur hidup yang super hemat, amankan semua aksesnya sekarang:
+                  Tentu Mommy tidak perlu membayar ratusan ribu rupiah. Amankan semua aksesnya sekarang:
                 </p>
 
                 <CountdownTimer />
 
                 <div className="flex items-center justify-center gap-3 pt-2">
-                  <span className="text-stone-400 line-through text-xl font-bold">
+                  <span className="text-stone-400 line-through text-2xl md:text-3xl font-bold">
                     Rp 199.000
                   </span>
                   <span className="bg-red-100 text-red-600 font-black text-[10px] md:text-xs px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">
-                    HEMAT PROMO BULAN INI
+                    PROMO KHUSUS
                   </span>
                 </div>
 
                 <div className="space-y-1">
-                  <p className="text-5xl md:text-6xl font-black text-soft-teal-dark tracking-tight">
-                    Rp79.000
+                  <p className="text-xs md:text-sm font-extrabold text-warm-pink-dark uppercase tracking-wider">
+                    Khusus Anda untuk Bulan Ini:
+                  </p>
+                  <p className="text-4xl md:text-6xl font-black text-soft-teal-dark tracking-tight">
+                    Bayar Suka-suka
                   </p>
                   <p className="text-xs font-extrabold text-charcoal-light uppercase tracking-wide">
                     🎁 SEKALI BAYAR • AKSES SELAMANYA • GRATIS UPDATE
@@ -636,17 +595,13 @@ export default function App() {
               {/* Bold Checkout Button */}
               <div className="pt-2 text-center space-y-4 max-w-xl mx-auto">
                 <a
-                  href="https://wa.link/wt01kr"
+                  href="http://lynk.id/parentingacademyid/l2eevkg2g47w/checkout"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#ffc300] hover:bg-[#e0ac00] active:scale-[0.98] text-charcoal font-black text-sm md:text-base py-5 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer flex items-center justify-center gap-2 border-b-4 border-[#cc9c00] animate-bounce text-center"
                 >
                   <span>Ambil Akses Sekarang 🌸</span>
                 </a>
-                
-                <p className="text-[11px] text-[#cc9c00] font-black italic max-w-md mx-auto leading-normal">
-                  *Gunakan kode kupon <span className="bg-yellow-200 px-1.5 py-0.5 text-charcoal rounded-md font-black not-italic">"IBUCERDAS"</span> di halaman checkout untuk memotong harga menjadi ± Rp50.500 (kurang lebih Rp49.000) saja!
-                </p>
 
                 <div className="pt-3 border-t border-cream-dark/60 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-bold text-charcoal-light">
                   <span className="flex items-center gap-1.5">🛡️ 100% Pembelian Aman</span>
@@ -751,14 +706,14 @@ export default function App() {
             className="fixed bottom-0 left-0 right-0 z-35 bg-white/95 backdrop-blur-md px-5 py-3.5 border-t border-cream-dark shadow-2xl md:hidden flex items-center justify-between gap-4 font-sans"
           >
             <div>
-              <p className="text-[10px] font-black text-warm-pink-dark uppercase tracking-widest leading-none mb-1">PROMO TERBATAS</p>
-              <div className="flex items-baseline gap-1">
-                <span className="text-base font-black text-charcoal">Rp79.000</span>
-                <span className="text-[9px] line-through text-stone-400">199rb</span>
+              <p className="text-[10px] font-black text-warm-pink-dark uppercase tracking-widest leading-none mb-1">KHUSUS BULAN INI</p>
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-xs sm:text-sm font-black text-charcoal">Bayar Suka-suka</span>
+                <span className="text-[10px] line-through text-stone-400">199rb</span>
               </div>
             </div>
             <a
-              href="https://wa.link/wt01kr"
+              href="http://lynk.id/parentingacademyid/l2eevkg2g47w/checkout"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-soft-teal hover:bg-soft-teal-dark active:scale-95 text-white font-extrabold text-xs px-4 py-3 rounded-xl shadow-md transition-all flex items-center justify-center gap-1 cursor-pointer text-center"

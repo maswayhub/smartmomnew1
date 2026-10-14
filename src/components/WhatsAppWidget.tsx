@@ -35,29 +35,21 @@ export default function WhatsAppWidget() {
       
       const lowerText = text.toLowerCase();
       if (lowerText.includes("didapat") || lowerText.includes("apa saja yang didapat") || lowerText.includes("materi") || lowerText.includes("isi")) {
-        replyText = "Mommy akan mendapatkan Paket Mega Bonus Bundle lengkap senilai total *Rp1.722.000*, yang terdiri dari:\n\n" +
+        replyText = "Mommy akan mendapatkan Paket SmartMom Guide lengkap yang terdiri dari:\n\n" +
           "1. 📙 *Ebook SmartMom Guide PDF* (Masa Kehamilan s/d Anak Usia 5 Tahun)\n" +
-          "2. 🗓️ *Printable Parenting Planner Premium* (Checklist lahiran, tracker minum susu, dll.)\n" +
-          "3. 🎈 *60.000+ Kids Activities Bundle* (Aktivitas sensorik & motorik anti-gadget)\n" +
-          "4. 🎓 *39.000+ Printable Edukasi Siap Cetak* (Flashcard, poster, game edukatif)\n" +
-          "5. 🧠 *Brain & Finger Gym Pack* (Stimulasi otak kiri & kanan)\n" +
-          "6. 🎨 *300+ Mewarnai Anak Pack* (Halaman mewarnai lucu siap cetak)\n" +
-          "7. 💻 *Dashboard Web Interaktif* (Membaca bab instan hemat kuota di web)\n" +
-          "8. 📖 *3D Flipbook Premium + Budget Planner* (Simulasi buku fisik & planner keuangan)\n\n" +
-          "Semua produk ini bisa Mommy miliki hanya dengan investasi promo sekali bayar seumur hidup! 🥰";
+          "2. 🗓️ *Printable Parenting Planner* (Checklist persalinan, tracker ASI, imunisasi, & MPASI)\n" +
+          "3. 💰 *Budget Planner Lahiran* (Spreadsheet kalkulator biaya persalinan & perlengkapan bayi)\n" +
+          "4. 💻 *Dashboard Web Interaktif & 3D Flipbook* (Membaca praktis & hemat kuota di web)\n\n" +
+          "Semua produk ini bisa Mommy miliki dengan penawaran *Bayar Suka-suka* khusus bulan ini! Sekali bayar untuk akses seumur hidup! 🥰";
       } else if (lowerText.includes("berapa lama") || lowerText.includes("lama saya") || lowerText.includes("kapan") || lowerText.includes("mendapatkan") || lowerText.includes("pengiriman") || lowerText.includes("terima")) {
         replyText = "Setelah pembayaran berhasil dikonfirmasi, ebook beserta seluruh bonus premiumnya akan *langsung terkirim otomatis detik itu juga melalui WhatsApp resmi & email Mommy*! ⚡\n\nJadi tidak perlu menunggu, Mommy bisa langsung mendownload dan membacanya di HP, tablet, atau laptop saat ini juga. Sangat praktis!";
       } else if (lowerText.includes("bonus") || lowerText.includes("apa saja bonusnya") || lowerText.includes("planner")) {
-        replyText = "Tentu Mommy! Selain Ebook Utama, Mommy mendapatkan 7 bonus eksklusif siap pakai:\n\n" +
-          "✨ Printable Parenting Planner (PDF siap cetak)\n" +
-          "✨ 60.000+ Kids Activities (Anti-screentime)\n" +
-          "✨ 39.000+ Printable Edukasi (Flashcard & puzzle)\n" +
-          "✨ Brain & Finger Gym Pack (Stimulasi kecerdasan)\n" +
-          "✨ 300+ Halaman Mewarnai Anak Lucu\n" +
-          "✨ Dashboard Web Interaktif (Akses cepat)\n" +
-          "✨ 3D Flipbook Premium & Budget Planner Keuangan Keluarga\n\nSemua file bonus berformat resolusi tinggi siap cetak berulang kali di rumah Mommy! 🖨️";
-      } else if (lowerText.includes("harga") || lowerText.includes("berapa harganya") || lowerText.includes("bayar") || lowerText.includes("diskon") || lowerText.includes("voucher") || lowerText.includes("promo")) {
-        replyText = "Kabar gembira buat Mommy! 😍\n\nHarga promo khusus bulan ini adalah *Rp79.000* (dari harga normal Rp199.000).\n\nEits, masih ada tambahan diskon *36%* lagi! Mommy tinggal masukkan kode kupon:\n\n🎁 *IBUCERDAS*\n\ndi halaman checkout. Harganya akan langsung terpotong menjadi hanya *± Rp50.500 (kurang lebih Rp49.000) saja!* 💸\n\nInvestasi sekali bayar, akses selamanya tanpa biaya bulanan. Jangan sampai kelewatan promo bulan ini ya Mom! ⏰";
+        replyText = "Tentu Mommy! Selain Ebook Utama, Mommy mendapatkan 2 bonus eksklusif siap pakai:\n\n" +
+          "✨ *Printable Parenting Planner* (Checklist persalinan, tracker ASI, imunisasi, & MPASI siap cetak)\n" +
+          "✨ *Budget Planner Lahiran* (Spreadsheet Excel kalkulator persiapan biaya persalinan & menyusui)\n\n" +
+          "Semua file bonus berformat resolusi tinggi siap disimpan di Google Drive Mommy dan dicetak di rumah! 🖨️";
+      } else if (lowerText.includes("harga") || lowerText.includes("berapa harganya") || lowerText.includes("bayar") || lowerText.includes("diskon") || lowerText.includes("voucher") || lowerText.includes("kupon") || lowerText.includes("promo")) {
+        replyText = "Kabar gembira buat Mommy! 😍\n\nHarga normal panduan ini adalah ~Rp199.000~.\n\nNamun *Khusus Anda untuk Bulan Ini*:\n🎉 *Bayar Suka-suka!* 🎉\n\nTanpa perlu kode kupon apa pun, Mommy bebas menentukan nominal saat checkout di Lynk.id. Investasi sekali bayar, akses selamanya tanpa biaya bulanan. Jangan sampai kelewatan promo bulan ini ya Mom! ⏰";
       } else if (lowerText.includes("aman") || lowerText.includes("apakah ini aman") || lowerText.includes("pembayaran")) {
         replyText = "Sangat aman dan terpercaya, Mommy! 🛡️\n\nPembayaran diproses melalui platform resmi *Lynk.id*. Mommy bisa memilih metode pembayaran yang paling nyaman:\n\n✅ QRIS (GoPay, OVO, DANA, ShopeePay, LinkAja)\n✅ Transfer Bank / Virtual Account\n\nSemua transaksi terenkripsi aman, dan materi langsung terkirim otomatis ke email & nomor WhatsApp Mommy setelah pembayaran sukses!";
       }

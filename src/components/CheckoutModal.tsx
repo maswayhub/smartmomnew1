@@ -210,8 +210,8 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                     <span className="line-through text-red-400">Rp199.000</span>
                   </div>
                   <div className="flex justify-between items-center mt-1">
-                    <span className="text-sm font-bold text-charcoal">Spesial Hari Ini (Sekali Bayar)</span>
-                    <span className="text-lg font-extrabold text-soft-teal-dark">Rp99.000</span>
+                    <span className="text-sm font-bold text-charcoal">Khusus Bulan Ini (Sekali Bayar)</span>
+                    <span className="text-base font-extrabold text-soft-teal-dark">Bayar Suka-suka</span>
                   </div>
                 </div>
 
