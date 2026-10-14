@@ -120,6 +120,21 @@ export default function App() {
   return (
     <div className="min-h-screen bg-cream-light font-sans text-charcoal selection:bg-warm-pink-accent selection:text-charcoal flex flex-col overflow-x-clip">
       
+      {/* Top Exclusive Chosen Announcement Ribbon */}
+      <div className="bg-gradient-to-r from-amber-500 via-rose-500 to-warm-pink-dark text-white text-xs md:text-sm font-extrabold py-2.5 px-4 text-center shadow-xs flex items-center justify-center gap-2 relative z-30">
+        <span className="inline-block animate-bounce text-sm">🎉</span>
+        <span>
+          <strong>Selamat! Anda terpilih</strong> untuk mendapatkan akses spesial Promo Bulan ini, <strong>Bayar suka-suka</strong>
+        </span>
+        <a 
+          href="#promo-price-card"
+          onClick={scrollToPriceCard}
+          className="ml-2 hidden sm:inline-flex items-center gap-1 bg-white text-rose-600 hover:bg-rose-50 text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-xs transition-all cursor-pointer"
+        >
+          Klaim Akses ➔
+        </a>
+      </div>
+
       {/* Hero Header Logo */}
       <header className="sticky top-0 z-30 w-full bg-cream-light/90 backdrop-blur-md border-b border-cream-dark/30 shadow-xs transition-all">
         <div className="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
@@ -480,7 +495,7 @@ export default function App() {
                   </div>
                   
                   <div className="pt-3 border-t border-cream-dark flex items-center justify-between text-xs font-bold text-charcoal-light">
-                    <span>⏱️ Sekali Bayar • Akses Selamanya • Gratis Update</span>
+                    <span>⏱️ Sekali Bayar • Akses Selamanya</span>
                     <span className="text-red-500 font-extrabold">Nilai Riil: Rp199.000</span>
                   </div>
                 </div>
@@ -529,13 +544,26 @@ export default function App() {
               <div className="absolute -top-12 -left-12 w-28 h-28 bg-[#ffc300]/25 rounded-full blur-2xl" />
               <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-[#ffc300]/25 rounded-full blur-2xl" />
 
-              <div className="space-y-1">
+              {/* Chosen VIP Badge */}
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 via-rose-500 to-warm-pink-dark text-white font-black text-xs md:text-sm px-5 py-2 rounded-full uppercase tracking-wider shadow-md animate-pulse">
+                <span>🎉</span>
+                <span>AKSES SPESIAL: ANDA TERPILIH</span>
+                <span>✨</span>
+              </div>
+
+              <div className="space-y-2 max-w-2xl mx-auto">
                 <p className="text-xs font-black uppercase tracking-widest text-[#cc9c00]">
-                  🔥 PENAWARAN SPESIAL BULAN INI 🔥
+                  🔥 KESEMPATAN KHUSUS HARI INI 🔥
                 </p>
-                <h3 className="text-2.5xl md:text-4xl font-black text-charcoal">
-                  Berapa Nilai Ketenangan Seorang Ibu?
+                <h3 className="text-2xl md:text-4xl font-black text-charcoal leading-snug">
+                  Selamat! Anda Terpilih Mendapatkan Akses Spesial Promo Bulan Ini
                 </h3>
+                <p className="text-sm md:text-base font-extrabold text-warm-pink-dark leading-relaxed bg-white/70 py-2.5 px-4 rounded-xl border border-warm-pink/20 shadow-3xs">
+                  "Selamat anda terpilih untuk mendapatkan akses spesial Promo Bulan ini, Bayar suka-suka"
+                </p>
+                <p className="text-xs text-charcoal-light font-bold">
+                  Sistem kami memberikan akses istimewa ini khusus untuk kunjungan Mommy saat ini. Kuota akses terbatas dan hanya berlaku di sesi ini.
+                </p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-xs p-6 rounded-2xl border border-cream-dark text-left space-y-3 max-w-xl mx-auto text-xs md:text-sm">
@@ -565,7 +593,7 @@ export default function App() {
                   "Bayangkan jika semua rasa cemas yang Mommy rasakan hari ini bisa digantikan dengan satu panduan yang selalu siap dibuka kapan saja."
                 </p>
                 <p className="text-xs md:text-sm text-charcoal-light font-bold max-w-lg mx-auto">
-                  Tentu Mommy tidak perlu membayar ratusan ribu rupiah. Amankan semua aksesnya sekarang:
+                  Karena Mommy adalah salah satu yang beruntung terpilih, Mommy tidak perlu membayar ratusan ribu rupiah:
                 </p>
 
                 <CountdownTimer />
@@ -574,21 +602,26 @@ export default function App() {
                   <span className="text-stone-400 line-through text-2xl md:text-3xl font-bold">
                     Rp 199.000
                   </span>
-                  <span className="bg-red-100 text-red-600 font-black text-[10px] md:text-xs px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">
-                    PROMO KHUSUS
+                  <span className="bg-emerald-100 text-emerald-700 font-black text-[10px] md:text-xs px-3 py-1 rounded-full uppercase tracking-wider animate-pulse flex items-center gap-1">
+                    <span>👑</span> KHUSUS TERPILIH
                   </span>
                 </div>
 
-                <div className="space-y-1">
+                <div className="space-y-2">
                   <p className="text-xs md:text-sm font-extrabold text-warm-pink-dark uppercase tracking-wider">
                     Khusus Anda untuk Bulan Ini:
                   </p>
                   <p className="text-4xl md:text-6xl font-black text-soft-teal-dark tracking-tight">
                     Bayar Suka-suka
                   </p>
-                  <p className="text-xs font-extrabold text-charcoal-light uppercase tracking-wide">
-                    🎁 SEKALI BAYAR • AKSES SELAMANYA • GRATIS UPDATE
+                  <p className="text-sm md:text-base font-bold text-charcoal bg-amber-100/70 py-2 px-4 rounded-xl inline-block border border-amber-300/60 shadow-3xs max-w-lg mx-auto">
+                    Masukkan nilai sesuai harga yang anda inginkan, download, akses selamanya
                   </p>
+                  <div>
+                    <p className="text-xs font-extrabold text-charcoal-light uppercase tracking-wide">
+                      🎁 SEKALI BAYAR • AKSES SELAMANYA
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -706,7 +739,9 @@ export default function App() {
             className="fixed bottom-0 left-0 right-0 z-35 bg-white/95 backdrop-blur-md px-5 py-3.5 border-t border-cream-dark shadow-2xl md:hidden flex items-center justify-between gap-4 font-sans"
           >
             <div>
-              <p className="text-[10px] font-black text-warm-pink-dark uppercase tracking-widest leading-none mb-1">KHUSUS BULAN INI</p>
+              <p className="text-[10px] font-black text-warm-pink-dark uppercase tracking-widest leading-none mb-1 flex items-center gap-1">
+                <span>🎉</span> ANDA TERPILIH
+              </p>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-xs sm:text-sm font-black text-charcoal">Bayar Suka-suka</span>
                 <span className="text-[10px] line-through text-stone-400">199rb</span>

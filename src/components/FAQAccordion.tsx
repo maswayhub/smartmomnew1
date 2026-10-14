@@ -149,8 +149,8 @@ export default function FAQAccordion() {
                   </tbody>
                 </table>
               </div>
-              <div className="bg-yellow-100/70 border border-yellow-200 rounded-xl p-3 text-center text-xs md:text-sm font-black text-charcoal">
-                🎉 Khusus Anda untuk Bulan Ini: <span className="line-through text-stone-400 mr-2">Rp199.000</span> <span className="text-rose-600 text-base font-black">Bayar Suka-suka!</span>
+              <div className="bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-300/50 rounded-xl p-3 text-center text-xs md:text-sm font-black text-charcoal">
+                🎉 <strong>Selamat! Anda terpilih</strong> untuk mendapatkan akses spesial Promo Bulan ini: <span className="line-through text-stone-400 mr-2">Rp199.000</span> <span className="text-rose-600 text-base font-black">Bayar Suka-suka!</span>
               </div>
             </div>
           )

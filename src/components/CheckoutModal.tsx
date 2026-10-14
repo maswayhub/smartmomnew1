@@ -154,8 +154,8 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
 
             {step === "input" && (
               <form onSubmit={handleNextStep} className="space-y-4">
-                <div className="bg-warm-pink-light/40 p-4 rounded-2xl border border-warm-pink/15 text-xs text-charcoal-light leading-relaxed mb-4">
-                  🌸 <strong>Pemberitahuan:</strong> Pastikan Mommy mengisi alamat email dengan benar ya, karena akses langsung ke Google Drive berisi ebook & ribuan file siap cetak akan otomatis dikirimkan ke email tersebut.
+                <div className="bg-gradient-to-r from-amber-50 to-rose-50 p-4 rounded-2xl border border-amber-300/50 text-xs text-charcoal-light leading-relaxed mb-4">
+                  🎉 <strong>Selamat! Anda terpilih</strong> untuk mendapatkan akses spesial Promo Bulan ini: <strong>Bayar suka-suka</strong> (Harga normal <span className="line-through text-stone-400 font-bold">Rp 199.000</span> dicoret). Pastikan alamat email diisi dengan tepat ya, link akses & bonus akan langsung dikirimkan ke email tersebut.
                 </div>
 
                 <div className="space-y-1.5">
@@ -213,6 +213,9 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                     <span className="text-sm font-bold text-charcoal">Khusus Bulan Ini (Sekali Bayar)</span>
                     <span className="text-base font-extrabold text-soft-teal-dark">Bayar Suka-suka</span>
                   </div>
+                  <p className="text-[11px] text-stone-500 font-semibold mt-1.5 pt-1.5 border-t border-dashed border-stone-200">
+                    💡 Masukkan nilai sesuai harga yang anda inginkan, download, akses selamanya.
+                  </p>
                 </div>
 
                 <button
